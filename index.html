@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>Notre liste de naissance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="Accueil, notre liste"><span class="brand-mark">✳</span> notre liste<span class="brand-dot">.</span></a>
+    <nav aria-label="Navigation principale"><a href="#cadeaux">La liste</a><button class="nav-admin" id="admin-open" type="button">Espace parents <span aria-hidden="true">↗</span></button></nav>
+  </header>
+
+  <main id="accueil">
+    <section class="intro wrap">
+      <div class="intro-copy"><p class="eyebrow"><span class="little-star">✳</span> UNE BELLE AVENTURE COMMENCE</p><h1 id="welcome-title">Un petit être,<br><em>beaucoup d’amour.</em></h1><p class="intro-text" id="welcome-text">Bientôt, notre famille s’agrandit. Voici quelques idées pour accueillir bébé et préparer ses premiers moments parmi nous.</p><a class="intro-link" href="#cadeaux">Découvrir la liste <span aria-hidden="true">↓</span></a></div>
+      <div class="intro-image" role="img" aria-label="Vêtements de bébé soigneusement disposés"><div class="image-label"><span>FAIT AVEC</span><strong>beaucoup<br>d’amour <i>♥</i></strong></div></div>
+      <div class="intro-note"><span>01 / 03</span><span>LES PETITES CHOSES QUI COMPTENT</span></div>
+    </section>
+
+    <section class="list-section" id="cadeaux">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow"><span class="little-star">✳</span> CHOISIS AVEC SOIN</p><h2>La liste de bébé<span class="heading-dot">.</span></h2><p>Un grand merci de faire partie de cette jolie aventure.</p></div><div class="list-count"><span id="gift-count">00</span><small> PETITES ENVIES</small></div></div>
+        <div id="demo-notice" class="notice" hidden>Mode découverte : ces cadeaux sont des exemples et les engagements ne sont pas enregistrés.</div>
+        <div class="toolbar"><div class="filters" id="filters" aria-label="Filtrer les cadeaux"></div><label class="search"><span aria-hidden="true">⌕</span><span class="sr-only">Rechercher un cadeau</span><input id="search" type="search" placeholder="Rechercher"></label></div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+        <div id="gift-grid" class="gift-grid"></div>
+      </div>
+    </section>
+    <section class="closing wrap"><span class="closing-star">✳</span><div><p class="eyebrow">UN PETIT MOT POUR VOUS</p><h2>Merci d’être là<span class="heading-dot">.</span></h2><p>Votre présence et vos petites attentions comptent déjà beaucoup pour nous.</p></div><span class="closing-heart">♥</span></section>
+  </main>
+  <footer class="footer"><div class="wrap"><span class="brand">✳ &nbsp;notre liste<span class="brand-dot">.</span></span><span>Une liste pleine d’amour, pour une grande aventure.</span><button id="footer-admin" type="button">Espace parents ↗</button></div></footer>
+
+  <dialog id="modal"><div class="modal-inner"><button class="close" id="modal-close" type="button" aria-label="Fermer">×</button><div id="modal-content"></div></div></dialog>
+  <script id="gift-template" type="text/template"></script>
+</body>
+</html>
