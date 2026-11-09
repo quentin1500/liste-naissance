@@ -1,2 +1,2 @@
 // URL du déploiement Web App Apps Script (se termine par /exec).
-window.APP_CONFIG = { apiUrl: '' };
+window.APP_CONFIG = { apiUrl: 'https://script.google.com/macros/s/AKfycby1UPpPjdB7wpqdSkCZ26Ap1rLoKM_qD6OBRgqw1ipfFnvSGFHXy0a5m7De9k23zpoB/exec' };
